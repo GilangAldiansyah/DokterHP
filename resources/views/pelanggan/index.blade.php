@@ -87,7 +87,7 @@
         <div class="header-action">
           <button class="btn btn-main">
             <span class="las la-plus"></span>
-            Tambahkan
+            <a href="{{ route('pelanggan.create') }}" class="btn btn-main">Tambahkan</a>
           </button>
         </div>
       </header>
@@ -106,18 +106,21 @@
               </tr>
             </thead>
             <tbody>
+              @foreach ($data_pelanggan as $pelanggan)
               <tr>
-                <td>1</td>
-                <td>Gilang</td>
-                <td>gilang.aldiansyah@gmail.com</td>
-                <td>08967971581</td>
-                <td>Cilongok</td>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $pelanggan->username }}</td>
+                <td>{{ $pelanggan->password }}</td>
+                <td>{{ $pelanggan->alamat }}</td>
+                <td>{{ $pelanggan->no_hp }}</td>
                 <td>
                   <button class="btn-success">Hapus</button> <br />
                   <button class="btn-success">Edit</button>
                 </td>
-              </tr>
-              <tr>
+              </tr>  
+              @endforeach
+              
+              {{-- <tr>
                 <td>2</td>
                 <td>Mahen</td>
                 <td>mahen@gmail.com</td>
@@ -160,7 +163,7 @@
                   <button class="btn-success">Hapus</button> <br />
                   <button class="btn-success">Edit</button>
                 </td>
-              </tr>
+              </tr> --}}
             </tbody>
 
             <tbody></tbody>

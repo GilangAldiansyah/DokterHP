@@ -33,9 +33,9 @@ class PelangganController extends Controller
         ]);
 
         Pelanggan::create([
-            'username'      => $request->merk,
-            'password'    => $request->tipe,
-            'alamat'    => $request->kerusakan,
+            'username'      => $request->username,
+            'password'    => $request->password,
+            'alamat'    => $request->alamat,
             'no_hp'    => $request->no_hp
         ]);
 
