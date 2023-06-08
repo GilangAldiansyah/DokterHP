@@ -19,7 +19,6 @@
         <div class="brand">
           <h2><i class="las la-cog"></i>Dokter HP</h2>
         </div>
-
         <div class="sidebar-avartar">
           <div>
             <img src="Dashboard/profile.png" alt="" />
@@ -35,13 +34,13 @@
         <div class="sidebar-menu">
           <ul>
             <li class="nav-item">
-              <a href="index.html">
+              <a href="/dash_board">
                 <span class="las la-adjust"></span>
                 <span>Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="handphone.html">
+              <a href="/handphone">
                 <span class="las la-phone"></span>
                 <span>Data Handphone</span>
               </a>
@@ -53,22 +52,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="pengguna.html">
+              <a href="/handphone">
                 <span class="las la-user"></span>
                 <span>Data Pengguna</span>
               </a>
             </li>
           </ul>
         </div>
-
-        <!-- <div class="sidebar-card">
-          <img src="" alt="" />
-          <div>
-            <h4>Make Adsense</h4>
-            <p>Tambahkan Iklan Anda</p>
-          </div>
-          <button class="btn btn-main">Create now</button>
-        </div> -->
       </div>
     </div>
 
