@@ -44,8 +44,12 @@
                                 <td>{{ $handphone->kerusakan }}</td>
                                 <td>{{ $handphone->status_perbaikan }}</td>
                                 <td>
-                                    <button class="btn-success">Hapus</button> <br />
-                                    <button class="btn-success">Edit</button>
+                                 <form action="{{ route('handphone.destroy', $handphone->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                          <button type="submit" class="btn-success">Hapus</button> 
+                                        </form>
+                                    <button class="btn-success"><a href="{{ route('handphone.edit', $handphone->id)}}" >Edit</a></button>
                                 </td>
                             </tr>
                         @endforeach

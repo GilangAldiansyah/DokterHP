@@ -41,8 +41,13 @@
                 <td>{{ $sparepart->nama }}</td>
                 <td>{{ $sparepart->stok }}</td>
                 <td>
-                  <button class="btn-success">Hapus</button> <br />
-                  <button class="btn-success">Edit</button>
+                  <form action="{{ route('sparepart.destroy', $sparepart->id) }}" method="POST">
+                  @csrf
+                  @method('DELETE')
+                    <button type="submit" class="btn-success">Hapus</button> 
+                  </form>
+                  <br />
+                  <button class="btn-success"><a href="{{ route('sparepart.edit', $sparepart->id)}}" >Edit</a></button>
                 </td>
               </tr>
               @endforeach
