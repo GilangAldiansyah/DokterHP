@@ -31,7 +31,7 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($data_sparepart as $Sparepart)
+              @foreach ($data_sparepart as $sparepart)
               <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $handphone->merk }}</td>
