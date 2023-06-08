@@ -27,7 +27,7 @@ Route::post('/register', [LoginController::class, 'store']);
 Route::get('dash_board', [DashboardController::class, 'index']);
 
 Route::resource('/handphone', \App\Http\Controllers\HandphoneController::class);
-
+Route::resource('/sparepart', \App\Http\Controllers\SparepartController::class);
 Route::resource('/pelanggan', \App\Http\Controllers\PelangganController::class);
 
 // Route::get('/log_in', function () {
