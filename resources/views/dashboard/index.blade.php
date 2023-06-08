@@ -26,8 +26,11 @@
           </div>
           <div class="avartar-info">
             <div class="avartar-text">
-              <h4>Gilang Aldiansyah</h4>
-              <small>089670971581</small>
+              @auth
+              <h4>{{ auth()->user()->name }}</h4>
+              <small>{{ auth()->user()->email }}</small>
+              @endauth
+        
             </div>
           </div>
         </div>
