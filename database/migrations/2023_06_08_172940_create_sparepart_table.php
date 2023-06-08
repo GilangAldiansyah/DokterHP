@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('sparepart', function (Blueprint $table) {
             $table->id();
+            $table->char('merk');
+            $table->char('tipe');
+            $table->char('nama');
+            $table->biginteger('stok');
             $table->timestamps();
         });
     }

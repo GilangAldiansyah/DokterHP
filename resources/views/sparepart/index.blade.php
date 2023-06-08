@@ -15,7 +15,7 @@
         <div class="header-action">
           <button class="btn btn-main">
             <span class="las la-plus"></span>
-            Tambahkan
+            <a href="{{ route('sparepart.create') }}" class="btn btn-main">Tambahkan</a>
           </button>
         </div>
       </header>
@@ -25,7 +25,9 @@
             <thead>
               <tr>
                 <th>No</th>
-                <th>Nama Sparepart</th>
+                <th>Merk</th>
+                <th>Tipe</th>
+                <th>nama</th>
                 <th>Stok</th>
                 <th>Aksi</th>
               </tr>
@@ -34,10 +36,10 @@
               @foreach ($data_sparepart as $sparepart)
               <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $handphone->merk }}</td>
-                <td>{{ $handphone->tipe }}</td>
-                <td>{{ $handphone->nama }}</td>
-                <td>{{ $handphone->stok }}</td>
+                <td>{{ $sparepart->merk }}</td>
+                <td>{{ $sparepart->tipe }}</td>
+                <td>{{ $sparepart->nama }}</td>
+                <td>{{ $sparepart->stok }}</td>
                 <td>
                   <button class="btn-success">Hapus</button> <br />
                   <button class="btn-success">Edit</button>
