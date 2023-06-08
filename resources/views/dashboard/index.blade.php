@@ -22,7 +22,7 @@
 
         <div class="sidebar-avartar">
           <div>
-            <img src="Dashboard/1.png" alt="" />
+            <img src="Dashboard/profile.png" alt="" />
           </div>
           <div class="avartar-info">
             <div class="avartar-text">
@@ -35,25 +35,25 @@
         <div class="sidebar-menu">
           <ul>
             <li class="nav-item">
-              <a href="#">
+              <a href="/dash_board">
                 <span class="las la-adjust"></span>
                 <span>Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="handphone.html">
+              <a href="/handphone">
                 <span class="las la-phone"></span>
                 <span>Data Handphone</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="sparepart.html">
+              <a href="sparepart">
                 <span class="las la-chart-bar"></span>
                 <span>Sparepart</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="pengguna.html">
+              <a href="/pelanggan">
                 <span class="las la-user"></span>
                 <span>Data Pengguna</span>
               </a>
@@ -75,7 +75,6 @@
           </label>
           <div class="header-title">
             <h1>DASHBOARD</h1>
-            <!-- <p>Display analytics about your channer <span class="las la-chart-line"></span></p> -->
           </div>
         </div>
       </header>
