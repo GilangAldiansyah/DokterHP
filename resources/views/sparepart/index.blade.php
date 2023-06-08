@@ -103,16 +103,21 @@
               </tr>
             </thead>
             <tbody>
+              @foreach ($data_sparepart as $Sparepart)
               <tr>
-                <td>1</td>
-                <td>LCD</td>
-                <td>100</td>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $handphone->merk }}</td>
+                <td>{{ $handphone->tipe }}</td>
+                <td>{{ $handphone->nama }}</td>
+                <td>{{ $handphone->stok }}</td>
                 <td>
                   <button class="btn-success">Hapus</button> <br />
                   <button class="btn-success">Edit</button>
                 </td>
               </tr>
-              <tr>
+              @endforeach
+              
+              {{-- <tr>
                 <td>2</td>
                 <td>Baterai</td>
                 <td>192</td>
@@ -147,7 +152,7 @@
                   <button class="btn-success">Hapus</button> <br />
                   <button class="btn-success">Edit</button>
                 </td>
-              </tr>
+              </tr> --}}
             </tbody>
 
             <tbody></tbody>
