@@ -27,7 +27,6 @@
               <tr>
                 <th>No</th>
                 <th>Nama</th>
-                <th>Email</th>
                 <th>No HP</th>
                 <th>Alamat</th>
                 <th>Aksi</th>
@@ -38,9 +37,8 @@
               <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $pelanggan->username }}</td>
-                <td>{{ $pelanggan->password }}</td>
-                <td>{{ $pelanggan->alamat }}</td>
                 <td>{{ $pelanggan->no_hp }}</td>
+                <td>{{ $pelanggan->alamat }}</td>
                 <td>
                 <form action="{{ route('pelanggan.destroy', $pelanggan->id) }}" method="POST">
                   @csrf
