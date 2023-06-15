@@ -34,6 +34,9 @@ Route::get('dash_board', [DashboardController::class, 'index']);
 Route::resource('/handphone', \App\Http\Controllers\HandphoneController::class);
 Route::resource('/sparepart', \App\Http\Controllers\SparepartController::class);
 Route::resource('/pelanggan', \App\Http\Controllers\PelangganController::class);
+Route::resource('/handphonepelanggan', \App\Http\Controllers\HandphoneController::class);
+Route::resource('/sparepartpelanggan', \App\Http\Controllers\SparepartController::class);
+Route::resource('/datapelanggan', \App\Http\Controllers\PelangganController::class);
 
 Route::get('admin-page',[App\Http\Controllers\DashboardController::class, 'indexAdmin'])->middleware('role:admin')->name('admin.page');
 

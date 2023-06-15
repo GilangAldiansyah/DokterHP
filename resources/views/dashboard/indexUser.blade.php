@@ -19,7 +19,7 @@
         <span>Semoga anda bahagia</span>
     </div>
     <div class="analytics">
-        <a href="/pelanggan">
+        <a href="/datapelanggan">
             <div class="analytic">
                 <div class="analytic-icon">
                     <span class="las la-user"></span>
@@ -35,13 +35,13 @@
                 <span class="las la-phone"></span>
             </div>
             <div class="analytic-info">
-                <a href="/handphone">
+                <a href="/handphonepelanggan">
                     <h2>Data Handphone</h2>
                 </a>
             </div>
         </div>
 
-        <a href="/sparepart">
+        <a href="/sparepartpelanggan">
             <div class="analytic">
                 <div class="analytic-icon">
                     <span class="las la-wrench"></span>
@@ -52,7 +52,7 @@
             </div>
         </a>
 
-        <a href="/handphone">
+        <a href="/pelanggan">
             <div class="analytic">
                 <div class="analytic-icon">
                     <span class="las la-tags"></span>
