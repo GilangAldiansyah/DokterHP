@@ -40,7 +40,7 @@ Route::get('admin-page',[App\Http\Controllers\DashboardController::class, 'index
 Route::get('user-page', [App\Http\Controllers\DashboardController::class, 'indexUser'])->middleware('role:user')->name('user.page');
 
 Route::get('assign-role-to-user', function(){
-    $user = User::findOrFail(2);
+    $user = User::findOrFail(6);
     $role = Role::findOrFail(2);
 
     $user->assignRole($role);
