@@ -51,17 +51,6 @@
                 </div>
             </div>
         </a>
-
-        <a href="/pelanggan">
-            <div class="analytic">
-                <div class="analytic-icon">
-                    <span class="las la-tags"></span>
-                </div>
-                <div class="analytic-info">
-                    <h2>Daftar Harga</h2>
-                </div>
-            </div>
-        </a>
     </div>
 </main>
 @endsection

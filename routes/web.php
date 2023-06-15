@@ -34,10 +34,11 @@ Route::get('dash_board', [DashboardController::class, 'index']);
 Route::resource('/handphone', \App\Http\Controllers\HandphoneController::class);
 Route::resource('/sparepart', \App\Http\Controllers\SparepartController::class);
 Route::resource('/pelanggan', \App\Http\Controllers\PelangganController::class);
-Route::resource('/handphonepelanggan', \App\Http\Controllers\HandphoneController::class);
-Route::resource('/sparepartpelanggan', \App\Http\Controllers\SparepartController::class);
-Route::resource('/datapelanggan', \App\Http\Controllers\PelangganController::class);
+Route::resource('/handphonepelanggan', \App\Http\Controllers\HandphonePelangganController::class);
+Route::resource('/statusperbaikan', \App\Http\Controllers\StatusPerbaikanController::class);
+Route::resource('/datapelanggan', \App\Http\Controllers\DataPelangganController::class);
 
+//Route::get('/handphonepelanggan', [\App\Http\Controllers\HandphoneController::class, 'index']);
 Route::get('admin-page',[App\Http\Controllers\DashboardController::class, 'indexAdmin'])->middleware('role:admin')->name('admin.page');
 
 Route::get('user-page', [App\Http\Controllers\DashboardController::class, 'indexUser'])->middleware('role:user')->name('user.page');
@@ -49,6 +50,3 @@ Route::get('assign-role-to-user', function(){
     $user->assignRole($role);
 });
 
-// Route::get('/log_in', function () {
-//     return view('login.index');
-// });

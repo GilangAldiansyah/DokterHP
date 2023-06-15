@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.mainUser')
 
 @section('container')
       <header>
@@ -11,6 +11,13 @@
             <!-- <p>Display analytics about your channer <span class="las la-chart-line"></span></p> -->
           </div>
         </div>
+        
+        <div class="header-action">
+            <button class="btn btn-main">
+              <span class="las la-plus"></span>
+              <a href="{{ route('pelanggan.create') }}" class="btn btn-main">Tambahkan</a>
+            </button>
+          </div>
       </header>
 
       <main>
@@ -33,11 +40,7 @@
                 <td>{{ $pelanggan->alamat }}</td>
               </tr>  
               @endforeach
-              
-           
             </tbody>
-
-            <tbody></tbody>
           </table>
         </div>
       </main>

@@ -21,6 +21,9 @@ class HandphoneController extends Controller
         return view('handphone.index', compact('data_handphone'));
     }
 
+    public function indexUser(){
+        return view('handphonepelanggan.indexUser');
+    }
     public function create(): view
     {
         return view('handphone.create');

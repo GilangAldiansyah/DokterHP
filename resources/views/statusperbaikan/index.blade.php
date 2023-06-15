@@ -7,7 +7,7 @@
                     <span class="las la-bars"></span>
                 </label>
                 <div class="header-title">
-                    <h1>Data Handphone</h1>
+                    <h1>Status Perbaikan</h1>
                     <!-- <p>Display analytics about your channer <span class="las la-chart-line"></span></p> -->
                 </div>
             </div>
@@ -30,6 +30,7 @@
                             <th>Tipe</th>
                             <th>Pemilik</th>
                             <th>Kerusakan</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,6 +41,7 @@
                                 <td>{{ $handphone->tipe }}</td>
                                 <td>{{ $handphone->nama_pelanggan }}</td>
                                 <td>{{ $handphone->kerusakan }}</td>
+                                <td>{{ $handphone->status_perbaikan }}</td>
                             </tr>
                         @endforeach
                     </tbody>
