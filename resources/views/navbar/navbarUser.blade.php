@@ -28,21 +28,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/handphone">
+            <a href="/handphonepelanggan">
               <span class="las la-phone"></span>
               <span>Data Handphone</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="sparepart">
+            <a href="/statusperbaikan">
               <span class="las la-chart-bar"></span>
               <span>Status Perbaikan</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/pelanggan">
-              <span class="las la-tags"></span>
-              <span>Daftar Harga</span>
             </a>
           </li>
         </ul>
