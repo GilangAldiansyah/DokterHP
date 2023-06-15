@@ -27,28 +27,28 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(UserRole::class);
 
-        User::create([
-            'name' => 'Admin',
-            'email' => 'Admin@gmail.com',
-            'password' => bcrypt('admin123')
-        ]);
+        // User::create([
+        //     'name' => 'Admin',
+        //     'email' => 'Admin@gmail.com',
+        //     'password' => bcrypt('admin123')
+        // ]);
 
-        User::create([
-            'name' => 'gilang',
-            'email' => 'gilang@gmail.com',
-            'password' => bcrypt('gilang123')
-        ]);
+        // User::create([
+        //     'name' => 'gilang',
+        //     'email' => 'gilang@gmail.com',
+        //     'password' => bcrypt('gilang123')
+        // ]);
 
-        User::create([
-            'name' => 'mahen',
-            'email' => 'mahen@gmail.com',
-            'password' => bcrypt('mahen123')
-        ]);
+        // User::create([
+        //     'name' => 'mahen',
+        //     'email' => 'mahen@gmail.com',
+        //     'password' => bcrypt('mahen123')
+        // ]);
         
-        User::create([
-            'name' => 'nafis',
-            'email' => 'nafis@gmail.com',
-            'password' => bcrypt('nafis123')
-        ]);
+        // User::create([
+        //     'name' => 'nafis',
+        //     'email' => 'nafis@gmail.com',
+        //     'password' => bcrypt('nafis123')
+        // ]);
     }
 }

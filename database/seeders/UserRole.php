@@ -15,19 +15,33 @@ class UserRole extends Seeder
     {
         $admin = User::create([
             'name' => 'Admin',
-            'email' => 'admin@admin',
+            'email' => 'admin@gmail.com',
             'password' => bcrypt('admin123'),
             ]);
 
-            $admin->assignRole('admin');
+            $admin->assignRole(1);
 
 
             $user = User::create([
-            'name' => 'User',
-            'email' => 'user@user',
-            'password' => bcrypt('user1234'),
+            'name' => 'gilang',
+            'email' => 'gilang@gmail.com',
+            'password' => bcrypt('gilang123'),
             ]);
-            $user->assignRole('user');
+            $user->assignRole(2);
+
+            $user = User::create([
+            'name' => 'mahen',
+            'email' => 'mahen@gmail.com',
+            'password' => bcrypt('mahen123'),
+            ]);
+            $user->assignRole(2);
+
+            $user = User::create([
+            'name' => 'nafis',
+            'email' => 'nafis@gmail.com',
+            'password' => bcrypt('nafis123'),
+            ]);
+            $user->assignRole(2);
             
     }
 }
