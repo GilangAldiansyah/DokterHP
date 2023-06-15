@@ -17,6 +17,15 @@ class LoginController extends Controller
     ]);
     }
 
+    public function authenticated(Request $request, $user){
+        if ($user->hasRole('admin')) {
+            return redirect()->route('admin.page');
+        }else{
+            return redirect()->route('user.page');
+        }
+    }
+
+
     public function store(Request $request){
        $validatedData = $request->validate([
             'name' => 'required|max:255',
@@ -48,5 +57,7 @@ class LoginController extends Controller
     return back()->withErrors([
         'email' => 'The provided credentials do not match our records.',
     ])->onlyInput('email');
+
+    
 }
 }

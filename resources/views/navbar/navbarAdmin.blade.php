@@ -49,7 +49,7 @@
       </div>
 
       <div class="log-out">
-        <a href="../About/index.html"><button class="btn btn-main">Log Out</button></a>
+        <a href="/"><button class="btn btn-main">Log Out</button></a>
       </div>
     </div>
   </div>

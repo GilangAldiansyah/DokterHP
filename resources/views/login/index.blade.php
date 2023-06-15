@@ -34,7 +34,7 @@
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-            <form action="/log_in" method="post">
+            <form action="/loginPage" method="post">
               @csrf
               <div class="input-boxes">
                 <div class="input-box">
