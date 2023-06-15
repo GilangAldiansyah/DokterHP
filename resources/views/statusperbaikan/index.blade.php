@@ -12,12 +12,12 @@
                 </div>
             </div>
 
-                <div class="header-action">
+                {{-- <div class="header-action">
                     <button class="btn btn-main">
                         <span class="las la-plus"></span>
                         <a href="{{ route('handphone.create') }}" class="btn btn-main">Tambahkan</a>
                     </button>
-                </div>
+                </div> --}}
         </header>
 
         <main>

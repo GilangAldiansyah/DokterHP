@@ -15,8 +15,8 @@
 
 <main>
     <div class="dashboard">
-        <h2 class="">Selamat Datang di Dokter HP <span class="las la-chart-line"></span></h2>
-        <span>Semoga anda bahagia</span>
+        <h2 class="">Selamat Datang {{auth()->user()->name}} ,di Dokter HP <span class="las la-chart-line"></span></h2>
+        <span>Sering-sering mampir yaa &#128512</span>
     </div>
     <div class="analytics">
         <a href="/datapelanggan">
